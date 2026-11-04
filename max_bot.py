@@ -8,10 +8,10 @@ from maxapi.types import MessageCreated, Command
 from openai import AsyncOpenAI
 
 # Токен бота MAX
-BOT_TOKEN = "сюда_вставь_токен_MAX"
+BOT_TOKEN = "f9LHodD0cOKTuNM5mS8y0q_qJYXvbzUYMwOZciIVEb9Yn_JbLJmKNYl2TaJHfhBBwLEsqbLJjV28Dbep1K7j"
 
 # Настройки LLM (Grok / xAI)
-LLM_API_KEY = "сюда_вставь_ключ_xai-"
+LLM_API_KEY = "xai-EQ5StoakPe5iRsWkT75FHGw18a6tOgIRgd3NpYWgwPgAb6OWlbhsB1QGZxiFdr4PE6bZi1kBbkhqaLUq"
 LLM_BASE_URL = "https://api.x.ai/v1"
 LLM_MODEL = "grok-4.3"
 
