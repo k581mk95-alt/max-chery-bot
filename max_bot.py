@@ -9,9 +9,10 @@ from openai import AsyncOpenAI
 BOT_TOKEN = "f9LHodD0cOKTuNM5mS8y0q_qJYXvbzUYMwOZciIVEb9Yn_JbLJmKNYl2TaJHfhBBwLEsqbLJjV28Dbep1K7j"
 
 # Настройки LLM (Grok / xAI)
-LLM_API_KEY = "xai-EQ5StoakPe5iRsWkT75FHGw18a6tOgIRgd3NpYWgwPgAb6OWlbhsB1QGZxiFdr4PE6bZi1kBbkhqaLUq"
-LLM_BASE_URL = "https://api.x.ai/v1"
-LLM_MODEL = "grok-4.3"
+import os
+LLM_API_KEY = os.getenv("LLM_API_KEY")
+LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.x.ai/v1")
+LLM_MODEL = os.getenv("LLM_MODEL", "grok-4.3")
 
 TZ = ZoneInfo("Europe/Moscow")
 
