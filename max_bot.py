@@ -13,7 +13,7 @@ import os
 LLM_API_KEY = os.getenv("LLM_API_KEY")
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.x.ai/v1")
 LLM_MODEL = os.getenv("LLM_MODEL", "grok-4.3")
-
+print("=== LLM_API_KEY =", (LLM_API_KEY[:12] + "...") if LLM_API_KEY else "НЕ НАЙДЕН", "===")
 TZ = ZoneInfo("Europe/Moscow")
 
 SYSTEM_PROMPT = """
