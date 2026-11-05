@@ -2,7 +2,6 @@ import asyncio
 import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
-import httpx
 from maxapi import Bot, Dispatcher
 from maxapi.types import MessageCreated, Command
 from openai import AsyncOpenAI
